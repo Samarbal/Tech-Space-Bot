@@ -1,0 +1,12 @@
+[
+  {"product": "Laptop X", "processor": "Intel i7", "ram": "16GB", "battery": "12 hours", "price": 1200},
+  {"product": "Tablet Y", "processor": "M2 Chip", "ram": "8GB", "battery": "10 hours", "price": 800},
+  {"product": "Workstation Z", "processor": "AMD Ryzen 9", "ram": "64GB", "battery": "N/A", "price": 2500},
+  {"product": "Ultrabook Air", "processor": "M3 Chip", "ram": "16GB", "battery": "18 hours", "price": 1400},
+  {"product": "Gaming Pro", "processor": "Intel i9", "ram": "32GB", "battery": "5 hours", "price": 2100},
+  {"product": "Budget Book", "processor": "Intel i3", "ram": "8GB", "battery": "7 hours", "price": 4500},
+  {"product": "Studio Tab", "processor": "M1 Ultra", "ram": "16GB", "battery": "9 hours", "price": 1100},
+  {"product": "Mini PC", "processor": "AMD Ryzen 5", "ram": "16GB", "battery": "N/A", "price": 600},
+  {"product": "Business Elite", "processor": "Intel i7 vPro", "ram": "16GB", "battery": "14 hours", "price": 1600},
+  {"product": "Convertible Flip", "processor": "Intel i5", "ram": "12GB", "battery": "11 hours", "price": 950}
+]
