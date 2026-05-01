@@ -10,7 +10,7 @@ import logging
 
 from vector_store import search_no_metadata, search_with_metadata
 from prompt import build_rag_prompt
-from deep_seek_llm import ask_llm
+from deep_seek_llm import ask_llm, ask_llm_sync
 
 logging.basicConfig(level=logging.INFO)
 
@@ -36,7 +36,7 @@ class QueryRequest(BaseModel):
     max_price: float = None
     processor: str = None
     use_metadata: bool = True
-    k: int = 2
+    k: int = 7
 
 class QueryResponse(BaseModel):
     answer: str
@@ -62,7 +62,7 @@ async def ask(req: QueryRequest):
             return QueryResponse(answer="No relevant products found.", contexts=[], metadata=metadata_out)
 
         prompt = build_rag_prompt(req.question, docs)
-        answer = await ask_llm(prompt)
+        answer =  ask_llm_sync(prompt)
 
         return QueryResponse(answer=answer, contexts=docs, metadata=metadata_out)
 
