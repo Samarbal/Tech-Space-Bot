@@ -1,4 +1,4 @@
-# vector_store.py 
+# vector_store.py  // tech space bot 
 
 import chromadb
 from sentence_transformers import SentenceTransformer
