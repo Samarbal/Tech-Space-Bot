@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Product RAG Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Tech Product Assistant</h1>
+            <p>اسأل عن المنتجات التقنية (أعلى سعر، مواصفات، بطارية، ...)</p>
+        </header>
+        <div class="chat-box" id="chatBox">
+            <div class="message assistant">
+                مرحباً! اسألني عن أي منتج في قاعدة بياناتنا.
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="questionInput" placeholder="مثال: Which product is the most expensive?" />
+            <button id="sendBtn">إرسال ➤</button>
+        </div>
+        <div class="loader" id="loader" style="display: none;">جاري التفكير...</div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
